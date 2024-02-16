@@ -19,11 +19,11 @@ async function connect () {
     }
 }
 
-app.listen(3000,() => {
+app.listen(3001,() => {
     console.log("running on port 3000");
 })
 
-app.get("/", (req, res) => {
+app.get("/test", (req, res) => {
     res.send('port 3000 get request');
   });
 
